@@ -1,0 +1,11 @@
+body {
+    background: url('../images/restaurant2.jpg');
+    background-position: bottom;
+    background-size: cover;
+}
+
+.form-container {
+    background-color: rgba(2, 7, 1, 0.9);
+    padding: 70px;
+    border-radius: 10px;
+}

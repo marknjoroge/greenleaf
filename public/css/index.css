@@ -1,0 +1,545 @@
+body {
+    background-color: rgb(0, 0, 0) !important;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+}
+
+text {
+    color: wheat;
+}
+
+/* General */
+
+.title-part {
+    color: rgb(87, 182, 87);
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    font-variant: small-caps;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+}
+
+.mini-title {
+    font-size: 30px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* #about p, */
+
+/*                */
+/* Navbar Section */
+/*                */
+
+#navbar {
+    background-color: rgb(8, 17, 13);
+    /* position: fixed; */
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 0.7s;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+#navbar a {
+    font-size: 15px;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: 200;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+}
+
+#navbar a:hover,
+.active {
+    /* background-color: #ddd; */
+    /* color: black; */
+    border-radius: 5px;
+}
+
+#navbar a.active {
+    background-color: rgb(2, 3, 21);
+    color: rgb(131, 125, 243);
+}
+
+.home-link {
+    font-size: xx-large;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+}
+
+.home-link img {
+    width: 100px;
+}
+
+.nav-option {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 50px;
+    background-color: #f1f1f17d;
+    width: 150px;
+    background-color: rgb(39, 37, 50);
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 0px;
+    margin: 0px;
+}
+
+.with-sub:hover .dropdown-content {
+    display: block;
+}
+
+.top-nav,
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+}
+
+/*               */
+/* Home Section  */
+/*               */
+
+.home {
+    /* height: 100vh; */
+    width: 95%;
+    top: 90;
+    padding-top: 100px;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.scrollmenu {
+    margin: 20px;
+    padding-right: 20px;
+    width: 100%;
+    height: fit-content;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.product-card {
+    background-image: url("./images/download\ \(1\).jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    /* float: left; */
+
+    background-color: #eee;
+    float: none;
+    display: inline-block;
+    /* zoom: 1; */
+}
+
+.product-card,
+.product-card-overlay,
+.product {
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.product-card:hover .product-card-overlay {
+    display: block;
+}
+
+.product-card-overlay {
+    display: none;
+    /* position: absolute; */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+i {
+    color: red;
+    z-index: 7;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 40%;
+}
+
+.product-card-overlay i {
+    color: red;
+    z-index: 7;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 40%;
+}
+
+.food-name {
+    margin: auto;
+    top: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 100;
+    color: wheat;
+}
+
+.add-food-to-cart img {
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Reviews */
+
+#reviews {
+    text-align: center;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    height: 150vh;
+    padding: 100px;
+    margin: 20px;
+    width: 98%;
+    position: relative;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+#reviews span {
+    font-size: 50px;
+}
+
+.review-card {
+    padding: 10px;
+    padding-top: 70px;
+    margin: 50px;
+    float: none;
+    display: inline-block;
+}
+
+.review-card .avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 0 auto;
+}
+
+.review-itself {
+    height: fit-content;
+    width: 100px;
+    overflow-x: scroll;
+    padding-top: 60px;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    font-weight: 200;
+    word-spacing: 3px;
+}
+
+.reviewer {
+    font-size: 20px;
+    padding: 40px;
+}
+
+/*               */
+/* About Section */
+/*               */
+
+#about {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.part1 {
+    position: absolute;
+    width: 50%;
+    float: left;
+    text-align: center;
+    height: 100%;
+    background-image: url("../images/restaurant.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.part2 {
+    background-color: rgb(128,138,104);
+    width: 50%;
+    float: right;
+    height: 100%;
+    padding: 100px;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+}
+
+.part2 h1 {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+/*                 */
+/* Contact Section */
+/*                 */
+
+#contact {
+    position: relative;
+    width: 100%;
+    height: 120vh;
+}
+
+.pre-form {
+    top: 40%;
+    position: absolute;
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+
+.pre-form span {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.pre-form a {
+    color: white;
+    font-weight: 100;
+}
+
+.pre-form a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-form {
+    margin-top: 360px;
+    width: 40%;
+    float: right;
+}
+
+#contact input,
+#message,
+#subscribe input {
+    border: 0.5px solid white;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 60px;
+}
+
+.contact-form .wide,
+#subscribe input,
+#subscribe #submit-subscribe {
+    min-width: 510px;
+}
+
+#contact-form .placeholder {
+    left: 12px;
+    width: calc(100% - (12px * 2));
+}
+
+#contact #submit,
+#subscribe #submit-subscribe {
+    background-color: white;
+    color: rgb(39, 37, 50);
+    width: 170px;
+    font-weight: 800;
+}
+
+#subscribe #submit-subscribe {
+    width: 250px;
+}
+
+#subscribe {
+    text-align: center;
+    padding: 50px;
+}
+
+#subscribe span {
+    color: white;
+    font-size: 25px;
+}
+
+#the-footer {
+    padding: 40px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media screen and (min-width: 250px) {
+    #home {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    #home .name-div {
+        left: 20%;
+        right: 20%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #video-container {
+        width: 99.9%;
+    }
+
+    .product-card,
+    .product-card-overlay,
+    .product {
+        width: 200px;
+        height: 175px;
+        overflow: hidden;
+    }
+
+    .add-food-to-cart img {
+        height: 40px;
+    }
+
+    #about {
+        background-color: rgb(234, 74, 45);
+        height: 100vh;
+        width: 100%;
+    }
+    #about .part1,
+    #about .part2 {
+        height: 50%;
+        position: relative;
+        width: 100%;
+    }
+
+    #about .part2 {
+        height: max-content;
+        position: relative;
+        width: 100%;
+        padding: 20px;
+    }
+
+    #reviews {
+        height: max-content;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #reviews .review-card {
+        width: 100%;
+        padding: 10px;
+        margin: 0px;
+    }
+
+    #contact .pre-form,
+    #contact .contact-form {
+        text-align: center;
+        margin: 0;
+        margin-top: 0;
+        top: 0;
+        width: 100%;
+        position: relative;
+        padding-top: 40px;
+        height: max-content;
+    }
+
+    #contact input,
+    #message,
+    #subscribe input {
+        width: 80%;
+        margin: 10px;
+        /* position: relative; */
+    }
+
+    .contact-form .wide,
+    #subscribe input,
+    #subscribe #submit-subscribe {
+        min-width: 80%;
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    #reviews {
+        height: max-content;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #contact .pre-form,
+    #contact .contact-form {
+        text-align: center;
+        margin: 0;
+        margin-top: 0;
+        top: 0;
+        width: 100%;
+        position: relative;
+        padding-top: 40px;
+        height: max-content;
+    }
+
+    #contact input,
+    #message,
+    #subscribe input {
+        width: 80%;
+        margin: 10px;
+        /* position: relative; */
+    }
+
+    .contact-form .wide,
+    #subscribe input,
+    #subscribe #submit-subscribe {
+        min-width: 80%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #home .links-div a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        float: none;
+        padding: 0px;
+    }
+
+    .innernav {
+        padding-right: 20px;
+    }
+
+    .right-div {
+        width: 50%;
+        float: right;
+    }
+
+    #home .name-div {
+        font-size: 30px;
+    }
+}
